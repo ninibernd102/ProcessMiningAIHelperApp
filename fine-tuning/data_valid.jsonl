@@ -1,0 +1,5 @@
+{"prompt": "Wie extrahiere ich ein Prozessmodell?", "completion": "Nutze den Alpha Miner für Abhängigkeitsnetze oder den Inductive Miner für hierarchische Prozessbäume."}
+{"prompt": "Welche Tools gibt es für Process Mining?", "completion": "Beliebte Tools sind ProM (Open Source), Disco (kommerziell) und Celonis. Diese implementieren Algorithmen wie den Heuristic Miner oder Fuzzy Miner."}
+{"prompt": "Was ist der Unterschied zwischen Alpha Miner und Heuristic Miner?", "completion": "Der Alpha Miner erstellt Abhängigkeitsnetze durch direkte Loganalyse, während der Heuristic Miner Häufigkeiten und Schwellenwerte nutzt, um robustere Modelle zu generieren."}
+{"prompt": "Algorithmen für unvollständige Ereignisprotokolle?", "completion": "Heuristic Miner (filtert Rauschen) und Fuzzy Miner (Clusterung unklarer Aktivitäten)."}
+{"prompt": "Nenne mir Process-Mining-Tools.", "completion": "ProM (Open Source mit Plugins für Alpha Miner), Disco (nutzt Heuristic Miner), Celonis (bietet Inductive Miner)."}

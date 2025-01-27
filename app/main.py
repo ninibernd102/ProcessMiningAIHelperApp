@@ -1,19 +1,14 @@
 import streamlit as st
-import pandas as pd
-from utils import query_ollama
+from ui import render_ui
 
-st.title("Process Mining Helper App")
-st.write("Lade eine CSV-Datei hoch und stelle Fragen zur Auswahl eines Process-Mining-Algorithmus.")
+st.set_page_config(layout="wide")
 
-# CSV-Upload
-uploaded_file = st.file_uploader("Lade eine CSV-Datei hoch", type=["csv"])
-if uploaded_file:
-    data = pd.read_csv(uploaded_file)
-    st.write("Vorschau der hochgeladenen Daten:", data.head())
+def main():
+    st.title("Process Mining Helper App")
+    st.write("Lade eine CSV-Datei hoch und stelle Fragen zur Auswahl eines Process-Mining-Algorithmus.")
 
-# Frage an die KI
-question = st.text_input("Frage an die KI:")
-if question:
-    st.write("KI wird befragt...")
-    answer = query_ollama(question)
-    st.write("Antwort der KI:", answer)
+    # Rendern der UI
+    render_ui()
+
+if __name__ == "__main__":
+    main()

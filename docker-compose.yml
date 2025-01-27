@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .  
+    ports:
+      - "8501:8501"  
+    volumes:
+      - ./feedback_logs:/app/logs  
+    environment:
+      - FEEDBACK_LOG_FILE=/app/logs/feedback_log.txt  
